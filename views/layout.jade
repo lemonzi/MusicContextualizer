@@ -4,7 +4,7 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src="/js/requirejs.prevent.caching.js")
-    script(data-main='/js/main.js', src='/js/lib/requirejs/require.js')
+    script(src="/js/require.config.js")
+    script(data-main='app/app', src='/js/lib/requirejs/require.js')
   body
     block content
