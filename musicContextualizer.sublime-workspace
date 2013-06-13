@@ -51,20 +51,76 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 816,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backend/soundscape.js",
+			"settings":
+			{
+				"buffer_size": 423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backend/lyrics.js",
+			"settings":
+			{
+				"buffer_size": 2537,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 209.0,
+		"height": 49.0,
 		"selected_items":
 		[
 			[
-				"save",
-				"Project: Save As"
+				"switch",
+				"Switch Project in Window"
+			],
+			[
+				"open",
+				"Project: Open Project"
+			],
+			[
+				"sw",
+				"Switch Project in Window"
+			],
+			[
+				"git cust",
+				"Git: Custom Command"
 			],
 			[
 				"git add",
 				"Git: Add..."
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"indent",
+				"Indentation: Tab Width: 4"
+			],
+			[
+				"evernote",
+				"Send to evernote"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"save",
+				"Project: Save As"
 			],
 			[
 				"git com",
@@ -79,10 +135,6 @@
 				"File: Rename"
 			],
 			[
-				"rename",
-				"File: Rename"
-			],
-			[
 				"cancel",
 				"Build: Cancel"
 			],
@@ -93,10 +145,6 @@
 			[
 				"list",
 				"Package Control: List Packages"
-			],
-			[
-				"evernote",
-				"Send to evernote"
 			],
 			[
 				"meta",
@@ -171,10 +219,6 @@
 				"FileDiffs: Menu"
 			],
 			[
-				"open",
-				"Project: Open Project"
-			],
-			[
 				"git",
 				"Git: Gui"
 			],
@@ -189,10 +233,6 @@
 			[
 				"comm",
 				"Git: Commit"
-			],
-			[
-				"switch",
-				"Switch Project in Window"
 			],
 			[
 				"rena",
@@ -276,6 +316,20 @@
 	},
 	"file_history":
 	[
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/lyrics.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/app.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/soundscape.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/notes.md",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/musicContextualizer.sublime-workspace",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/app.sublime-workspace",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/package.json",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/public/js/app/app.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/routes/index.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/public/js/require.config.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/views/index.jade",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/musixmatch.js",
+		"/Users/lemonzi/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/lemonzi/Library/Application Support/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
 		"/Users/lemonzi/Dropbox/ESMUC/Seminari/seminari.ms",
 		"/Users/lemonzi/Dropbox/ESMUC/Seminari/seminari",
 		"/Users/lemonzi/Downloads/lemonzi.bib",
@@ -389,21 +443,7 @@
 		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/estructures.m",
 		"/usr/include/sys/shm.h",
 		"/Users/lemonzi/Dropbox/UPF/SO/labs/lab4/makefile",
-		"/Users/lemonzi/Dropbox/UPF/SO/labs/lab2/pare.c",
-		"/Users/lemonzi/Dropbox/UPF/SO/labs/lab2/missatges.c",
-		"/Users/lemonzi/Dropbox/UPF/SO/labs/lab2/makefile",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/tex/formatStruct.tex",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/tex/visual.tex",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/main.tex",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/tex/overview.tex",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/tex/skeleton.tex",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/mystyle.sty",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/tex/qualysis.tex",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/tex/roadmap.tex",
-		"/Users/lemonzi/Library/Application Support/Sublime Text 2/Packages/LaTeXTools/Default (OSX).sublime-keymap",
-		"/Users/lemonzi/Downloads/texlive-en.tex",
-		"/Users/lemonzi/Documents/mtg/svn/Docs/User Manual/tex/tutorial.tex",
-		"/Users/lemonzi/Documents/mtg/User Manual.sublime-project"
+		"/Users/lemonzi/Dropbox/UPF/SO/labs/lab2/pare.c"
 	],
 	"find":
 	{
@@ -425,6 +465,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			",",
+			"sWords",
 			"texttt",
 			"indent",
 			"settings",
@@ -526,6 +568,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"','",
 			"    ",
 			"in",
 			"repoVizz",
@@ -540,8 +583,361 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"laxcomma": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "backend/soundscape.js",
+					"settings":
+					{
+						"buffer_size": 423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"laxcomma": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "backend/lyrics.js",
+					"settings":
+					{
+						"buffer_size": 2537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"laxcomma": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -594,6 +990,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"notes",
+				"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/notes.md"
+			],
+			[
+				"ap",
+				"app.js"
+			],
 			[
 				"test",
 				"MQ_vbap2d_test.m"
@@ -720,7 +1132,7 @@
 		[
 			[
 				"",
-				"/Users/lemonzi/Dropbox/UPF/Audio3D/labs/lab2/lab2.sublime-project"
+				"/Users/lemonzi/Documents/web/node-freesound/node-freesound.sublime-project"
 			],
 			[
 				"lab",

@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "MusicContextualizer",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.0.4",
     "jade": "*",
-    "request": "*"
+    "request": "*",
+    "freesound": "0.0.2"
   }
 }
