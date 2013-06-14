@@ -33,7 +33,7 @@ exports.getLyrics = function(id, success, error) {
 
 exports.getDictionary = function(str,cb) {
 
-    var words = str.replace(/[,;.\(\)]/g,'')
+    var words = str.replace(/[,;.\(\)‘]/g,'')
                    .split(/[\s\/]+/g)
                    // exlude words with apostrophe
                    .filter(function(s){return s.indexOf('\'') == -1;})

@@ -1,5 +1,14 @@
-extends layout
-
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/js/require.config.js")
+    script(data-main='app/app', src='/js/lib/requirejs/require.js')
+  body
+    block header
+      h1= title
 block content
  #player
     a.btn.play

@@ -13,7 +13,11 @@ exports.upload = function(req,res) {
     console.log('Got the audio! Computing...');
     engine.getMP3FromTrack(req.files.file.path,10,function(mp3) {
         push_data(res,mp3);
-    }, console.log);
+    }, function(e) {
+        res.write('Error: Track or lyrics not found.');
+        res.end();
+        console.log('Error');
+    });
 };
 
 function push_data(res,mp3) {
