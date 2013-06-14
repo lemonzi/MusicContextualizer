@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-color"
+			],
+			[
+				"drop",
+				"drop_zone"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"id",
+				"identifyFromAnalysis"
+			],
+			[
+				"fre",
+				"frequency"
+			],
+			[
+				"get",
+				"getSounds"
+			],
+			[
 				"image",
 				"imagesc"
 			],
@@ -55,23 +79,63 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 816,
+				"buffer_size": 932,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "backend/soundscape.js",
+			"file": "public/js/app/app.js",
 			"settings":
 			{
-				"buffer_size": 423,
+				"buffer_size": 818,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "backend/lyrics.js",
+			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 2537,
+				"buffer_size": 627,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/audio.jade",
+			"settings":
+			{
+				"buffer_size": 91,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/stylesheets/style.css",
+			"settings":
+			{
+				"buffer_size": 276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 496,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 310,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Bootstrap, from Twitter</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <!-- Le styles -->\n    <link href=\"../assets/css/bootstrap.css\" rel=\"stylesheet\">\n    <style type=\"text/css\">\n      body {\n        padding-top: 60px;\n        padding-bottom: 40px;\n      }\n    </style>\n    <link href=\"../assets/css/bootstrap-responsive.css\" rel=\"stylesheet\">\n\n    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->\n    <!--[if lt IE 9]>\n      <script src=\"../assets/js/html5shiv.js\"></script>\n    <![endif]-->\n\n    <!-- Fav and touch icons -->\n    <link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" href=\"../assets/ico/apple-touch-icon-144-precomposed.png\">\n    <link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" href=\"../assets/ico/apple-touch-icon-114-precomposed.png\">\n      <link rel=\"apple-touch-icon-precomposed\" sizes=\"72x72\" href=\"../assets/ico/apple-touch-icon-72-precomposed.png\">\n                    <link rel=\"apple-touch-icon-precomposed\" href=\"../assets/ico/apple-touch-icon-57-precomposed.png\">\n                                   <link rel=\"shortcut icon\" href=\"../assets/ico/favicon.png\">\n  </head>\n\n  <body>\n\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\n      <div class=\"navbar-inner\">\n        <div class=\"container\">\n          <button type=\"button\" class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-collapse\">\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n          </button>\n          <a class=\"brand\" href=\"#\">Project name</a>\n          <div class=\"nav-collapse collapse\">\n            <ul class=\"nav\">\n              <li class=\"active\"><a href=\"#\">Home</a></li>\n              <li><a href=\"#about\">About</a></li>\n              <li><a href=\"#contact\">Contact</a></li>\n              <li class=\"dropdown\">\n                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown <b class=\"caret\"></b></a>\n                <ul class=\"dropdown-menu\">\n                  <li><a href=\"#\">Action</a></li>\n                  <li><a href=\"#\">Another action</a></li>\n                  <li><a href=\"#\">Something else here</a></li>\n                  <li class=\"divider\"></li>\n                  <li class=\"nav-header\">Nav header</li>\n                  <li><a href=\"#\">Separated link</a></li>\n                  <li><a href=\"#\">One more separated link</a></li>\n                </ul>\n              </li>\n            </ul>\n            <form class=\"navbar-form pull-right\">\n              <input class=\"span2\" type=\"text\" placeholder=\"Email\">\n              <input class=\"span2\" type=\"password\" placeholder=\"Password\">\n              <button type=\"submit\" class=\"btn\">Sign in</button>\n            </form>\n          </div><!--/.nav-collapse -->\n        </div>\n      </div>\n    </div>\n\n    <div class=\"container\">\n\n      <!-- Main hero unit for a primary marketing message or call to action -->\n      <div class=\"hero-unit\">\n        <h1>Hello, world!</h1>\n        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>\n        <p><a href=\"#\" class=\"btn btn-primary btn-large\">Learn more &raquo;</a></p>\n      </div>\n\n      <!-- Example row of columns -->\n      <div class=\"row\">\n        <div class=\"span4\">\n          <h2>Heading</h2>\n          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\n          <p><a class=\"btn\" href=\"#\">View details &raquo;</a></p>\n        </div>\n        <div class=\"span4\">\n          <h2>Heading</h2>\n          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\n          <p><a class=\"btn\" href=\"#\">View details &raquo;</a></p>\n       </div>\n        <div class=\"span4\">\n          <h2>Heading</h2>\n          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>\n          <p><a class=\"btn\" href=\"#\">View details &raquo;</a></p>\n        </div>\n      </div>\n\n      <hr>\n\n      <footer>\n        <p>&copy; Company 2013</p>\n      </footer>\n\n    </div> <!-- /container -->\n\n    <!-- Le javascript\n    ================================================== -->\n    <!-- Placed at the end of the document so the pages load faster -->\n    <script src=\"../assets/js/jquery.js\"></script>\n    <script src=\"../assets/js/bootstrap-transition.js\"></script>\n    <script src=\"../assets/js/bootstrap-alert.js\"></script>\n    <script src=\"../assets/js/bootstrap-modal.js\"></script>\n    <script src=\"../assets/js/bootstrap-dropdown.js\"></script>\n    <script src=\"../assets/js/bootstrap-scrollspy.js\"></script>\n    <script src=\"../assets/js/bootstrap-tab.js\"></script>\n    <script src=\"../assets/js/bootstrap-tooltip.js\"></script>\n    <script src=\"../assets/js/bootstrap-popover.js\"></script>\n    <script src=\"../assets/js/bootstrap-button.js\"></script>\n    <script src=\"../assets/js/bootstrap-collapse.js\"></script>\n    <script src=\"../assets/js/bootstrap-carousel.js\"></script>\n    <script src=\"../assets/js/bootstrap-typeahead.js\"></script>\n\n  </body>\n</html>\n",
+			"settings":
+			{
+				"buffer_size": 5825,
 				"line_ending": "Unix"
 			}
 		}
@@ -79,9 +143,89 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 49.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"tab",
+				"Indentation: Tab Width: 2"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"custom",
+				"Git: Custom Command"
+			],
+			[
+				"git com",
+				"Git: Custom Command"
+			],
+			[
+				"Git push",
+				"Git: Push"
+			],
+			[
+				"dd",
+				"Git: Add..."
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"git check",
+				"Git: Checkout Current File"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"git us",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"it stat",
+				"Git: Status"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
 			[
 				"switch",
 				"Switch Project in Window"
@@ -99,14 +243,6 @@
 				"Git: Custom Command"
 			],
 			[
-				"git add",
-				"Git: Add..."
-			],
-			[
-				"rename",
-				"File: Rename"
-			],
-			[
 				"indent",
 				"Indentation: Tab Width: 4"
 			],
@@ -115,16 +251,8 @@
 				"Send to evernote"
 			],
 			[
-				"git ad",
-				"Git: Add..."
-			],
-			[
 				"save",
 				"Project: Save As"
-			],
-			[
-				"git com",
-				"Git: Commit"
 			],
 			[
 				"git ",
@@ -191,10 +319,6 @@
 				"Snippet: Evernote Metadata"
 			],
 			[
-				"add",
-				"Project: Add Folder"
-			],
-			[
 				"git co",
 				"Git: Commit"
 			],
@@ -225,14 +349,6 @@
 			[
 				"push",
 				"Git: Push"
-			],
-			[
-				"git push",
-				"Git: Push"
-			],
-			[
-				"comm",
-				"Git: Commit"
 			],
 			[
 				"rena",
@@ -316,17 +432,35 @@
 	},
 	"file_history":
 	[
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/engine.js",
 		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/lyrics.js",
-		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/app.js",
 		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/soundscape.js",
-		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/notes.md",
-		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/musicContextualizer.sublime-workspace",
-		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/app.sublime-workspace",
-		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/package.json",
-		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/public/js/app/app.js",
-		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/routes/index.js",
-		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/public/js/require.config.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/public/js/app/playlist.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/.gitignore",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/identify.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/stoplist.json",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/public/index.htm",
 		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/views/index.jade",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/routes/test.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/routes/upload.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/views/test.jade",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/test.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/routes/index.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/views/audio.jade",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/package.json",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/notes.md",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/app.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/public/js/app/app.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/node_modules/express/lib/request.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/old_stoplist.json",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/musicContextualizer.sublime-workspace",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/component.json",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/musicContextualizer.sublime-project",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/stoplist.json",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/stoplist.txt",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/node_modules/freesound/freesound.js",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/app.sublime-workspace",
+		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/public/js/require.config.js",
 		"/Users/lemonzi/Documents/web/hackathons/BCNMHD13/app/backend/musixmatch.js",
 		"/Users/lemonzi/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/Users/lemonzi/Library/Application Support/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
@@ -425,25 +559,7 @@
 		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/code/avaluacio/FindMSE.m",
 		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/code/avaluacio/endfunction.m",
 		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/code/jpeg/compression.m",
-		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/code/jpeg/jpeg_channel.m",
-		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/code/jpeg/decompression.m",
-		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/code/jpeg/jpeg_block.m",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/update_params.m",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/bhat_dist.m",
-		"/Users/lemonzi/Downloads/camshift.m",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/getModel.m",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/getPointsInEllipse.m",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/kernalProfile.m",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/update_params",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/probProfile.m",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/binNum.m",
-		"/Users/lemonzi/Dropbox/old/4MQL/2n Trimestre -3er curs/PV/Quim + Martas/P2/MS_functions/MS_functions/luma.m",
-		"/Users/lemonzi/Dropbox/UPF/OETIC/individuals/activitat15.md",
-		"/Users/lemonzi/Dropbox/UPF/OETIC/individuals/activitat15",
-		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/estructures.m",
-		"/usr/include/sys/shm.h",
-		"/Users/lemonzi/Dropbox/UPF/SO/labs/lab4/makefile",
-		"/Users/lemonzi/Dropbox/UPF/SO/labs/lab2/pare.c"
+		"/Users/lemonzi/Dropbox/UPF/SCIV/VideoCoding - MartaE&Quim&Marcel/P3/code/jpeg/jpeg_channel.m"
 	],
 	"find":
 	{
@@ -451,7 +567,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 96.0,
 		"where_history":
 		[
 			"*",
@@ -465,6 +581,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"lyrics",
+			"Lyrics",
+			"lyrics",
+			"Lyrics",
+			"lyrics",
+			"var",
+			"'",
+			"toa",
+			"',",
+			"^'",
+			"\\n",
+			"\n",
 			",",
 			"sWords",
 			"texttt",
@@ -568,6 +696,10 @@
 		"regex": true,
 		"replace_history":
 		[
+			"\"",
+			"\",",
+			"\"",
+			"',\\n'",
 			"','",
 			"    ",
 			"in",
@@ -583,7 +715,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -591,15 +723,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 816,
+						"buffer_size": 932,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								158,
+								158
 							]
 						],
 						"settings":
@@ -706,18 +838,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "backend/soundscape.js",
+					"file": "public/js/app/app.js",
 					"settings":
 					{
-						"buffer_size": 423,
+						"buffer_size": 818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								461,
+								461
 							]
 						],
 						"settings":
@@ -822,17 +954,483 @@
 				},
 				{
 					"buffer": 2,
-					"file": "backend/lyrics.js",
+					"file": "routes/index.js",
 					"settings":
 					{
-						"buffer_size": 2537,
+						"buffer_size": 627,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"laxcomma": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/audio.jade",
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"laxcomma": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/stylesheets/style.css",
+					"settings":
+					{
+						"buffer_size": 276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"laxcomma": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/index.jade",
+					"settings":
+					{
+						"buffer_size": 496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								384,
+								384
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"laxcomma": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/layout.jade",
+					"settings":
+					{
+						"buffer_size": 310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
 								0
 							]
 						],
@@ -928,12 +1526,43 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"settings":
+					{
+						"buffer_size": 5825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3614,
+								3614
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2070.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -958,11 +1587,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -974,7 +1610,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 251.0
+		"height": 355.0
 	},
 	"output.git":
 	{
@@ -991,8 +1627,72 @@
 		"selected_items":
 		[
 			[
+				"inde",
+				"routes/index.js"
+			],
+			[
+				"engine",
+				"backend/engine.js"
+			],
+			[
+				"sound",
+				"backend/soundscape.js"
+			],
+			[
+				"play",
+				"public/js/app/playlist.js"
+			],
+			[
+				"audio",
+				"views/audio.jade"
+			],
+			[
+				"ack",
+				"package.json"
+			],
+			[
+				"test",
+				"test.js"
+			],
+			[
+				"request",
+				"node_modules/express/lib/request.js"
+			],
+			[
 				"pack",
 				"package.json"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"compo",
+				"component.json"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"music",
+				"musicContextualizer.sublime-workspace"
+			],
+			[
+				"mus",
+				"musicContextualizer.sublime-project"
+			],
+			[
+				"ly",
+				"backend/lyrics.js"
+			],
+			[
+				"stop",
+				"backend/stoplist.json"
 			],
 			[
 				"packa",
@@ -1005,10 +1705,6 @@
 			[
 				"ap",
 				"app.js"
-			],
-			[
-				"test",
-				"MQ_vbap2d_test.m"
 			],
 			[
 				"qm",
@@ -1156,7 +1852,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 204.0,
 	"status_bar_visible": true
 }

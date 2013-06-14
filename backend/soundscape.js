@@ -9,7 +9,8 @@ var request = require('request'),
 freesound.apiKey = '8e541132eb0e40bd829806b7503f105e';
 
 exports.getSounds = function(words,options,success, error) {
-    freesound.search(words.join(' '),options,function(data){
+    if (words instanceof Array) words = words.join(' ');
+    freesound.search(words,options,function(data){
         var mp3 = data.sounds.map(function(sound){
             return options.highQuality ?
                 sound['preview-hq-mp3'] : sound['preview-lq-mp3'];

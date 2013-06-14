@@ -7,11 +7,15 @@ html
     script(src="/js/require.config.js")
     script(data-main='app/app', src='/js/lib/requirejs/require.js')
   body
-    block header
-      h1= title
-block content
-  form.dropzone(method="post", action="/upload", enctype="multipart/form-data")
-    input(id="fileInputEl", type="file", name="file")
+  .navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        a.brand Music Contextualizr ♫ ♬ ♪ ♩
+
+  .wrapper.hero-unit
+    .row
+      .audiocontainer
+    .row
+      h1#message
+        | Drop a song here
     br
-    br
-    input(type="submit", value="Submit")

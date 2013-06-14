@@ -30,7 +30,7 @@ exports.getLinksFromMMID = function(id,n,success,error) {
             }
             soundscape.getSounds([entry.text], {
                 sounds_per_page: nSounds,
-                f: 'duration:[0 TO 5]'
+                filter: 'duration:[0 TO 3]'
             },function(sound) {
                 mp3.push(sound);
                 n--;

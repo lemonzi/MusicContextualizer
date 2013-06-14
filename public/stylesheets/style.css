@@ -7,8 +7,19 @@ a {
   color: #00B7FF;
 }
 
-#drop_zone {
-    background-color: #005580;
+.wrapper {
     width: 100%;
     height: 100%;
+}
+
+.dz-progress {
+    display: none;
+}
+
+.dz-success-mark {
+    display: none;
+}
+
+.dz-error-mark {
+    display: none;
 }

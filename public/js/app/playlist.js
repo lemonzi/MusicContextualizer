@@ -5,6 +5,9 @@ define(['jquery'],function($) {
         tracks: []
     };
 
+    var playing = null;
+    var next = null;
+
     Playlist.build = function(index, element) {
         Playlist.tracks.push({
             position: index,
@@ -18,6 +21,7 @@ define(['jquery'],function($) {
             itemIndex: index
         }, function(event) {
             var nextIndex = event.data.itemIndex + 1;
+            next = item;
             Playlist.playIndex(nextIndex);
         });
     };
@@ -25,6 +29,7 @@ define(['jquery'],function($) {
     Playlist.playIndex = function(index) {
         $.each(Playlist.tracks, function(i, item) {
             if (index == item.position) {
+                playing = item.element;
                 item.element.play();
             }
         });

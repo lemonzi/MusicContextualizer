@@ -11,7 +11,7 @@ exports.index = function(req, res){
 exports.upload = function(req,res) {
     // Request body is binary
     console.log('Got the audio! Computing...');
-    engine.getMP3FromTrack(req.files.file.path,10,function(mp3) {
+    engine.getMP3FromTrack(req.files.file.path,15,function(mp3) {
         push_data(res,mp3);
     }, function(e) {
         res.write('Error: Track or lyrics not found.');
