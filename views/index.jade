@@ -2,15 +2,9 @@ extends layout
 
 block content
   h1= title
-  p #{title}
-  #drop_zone
-    |Drop files here
-  output#list
 
-
-  form.dropzone(method="post", action="#", enctype="multipart/form-data")
+  form.dropzone(method="post", action="/upload", enctype="multipart/form-data")
     input(id="fileInputEl", type="file", name="file")
-  a.btn.btn_large= submit
-    | Submit
-
-  #audio_container
+    br
+    br
+    input(type="submit", value="Submit")

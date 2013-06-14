@@ -1,4 +1,9 @@
-#player
-each item in links
-  .audio
-    audio(src=#{item})
+extends layout
+
+block content
+ #player
+    a.btn.play
+      | Play
+    each item,i in links
+      audio(src="#{item}")
+

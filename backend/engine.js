@@ -29,7 +29,8 @@ exports.getLinksFromMMID = function(id,n,success,error) {
                 return;
             }
             soundscape.getSounds([entry.text], {
-                sounds_per_page: nSounds
+                sounds_per_page: nSounds,
+                f: 'duration:[0 TO 5]'
             },function(sound) {
                 mp3.push(sound);
                 n--;
