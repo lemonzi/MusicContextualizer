@@ -19,14 +19,50 @@ exports.analyzeTrack = function(path,success,error) {
 };
 
 exports.identifyFromAnalysis = function(obj,success,error) {
-    params = {api_key: apiKey};
+    var params = {
+        api_key: apiKey,
+        bucket: 'id:musixmatch-WW'
+    };
     request({
         url: 'http://developer.echonest.com/api/v4/song/identify',
         method: 'POST',
         body: obj,
+        headers: {
+            'Content-type': 'application/octet-stream'
+        },
         json: true,
         qs: params
-    }, function(data) {
-        success(data);
-    },error);
+    },function(e, r, body) {
+        if (e || r.statusCode != 200)
+            error(r.statusCode);
+        else {
+            var song = body.response.songs[0];
+            success(song);
+        }
+    });
+};
+
+exports.getMMID = function(id,success,error) {
+    var params = {
+        api_key: apiKey,
+        bucket: 'id:musixmatch-WW',
+        id: id,
+        limit: true
+    };
+    request({
+        url: 'http://developer.echonest.com/api/v4/song/profile',
+        method: 'GET',
+        json: true,
+        qs: params
+    },function(e, r, body) {
+        if (e || r.statusCode != 200 || body.response.songs.length === 0)
+            error(r.statusCode);
+        else {
+            var ids_obj = body.response.songs[0].foreign_ids;
+            var ids = ids_obj.map(function(obj) {
+                return obj.foreign_id.split(':')[2];
+            });
+            success(ids);
+        }
+    });
 };

@@ -16,7 +16,7 @@ app.configure(function(){
     app.set('view engine', 'jade');
     app.use(express.favicon());
     app.use(express.logger('dev'));
-    app.use(express.bodyParser());
+    app.use(express.bodyParser({ keepExtensions: true, uploadDir: './tmp/uploads' }));
     app.use(express.methodOverride());
     app.use(app.router);
     app.use(express.static(path.join(__dirname, 'public')));
@@ -26,10 +26,9 @@ app.configure('development', function(){
     app.use(express.errorHandler());
 });
 
+app.get('/test',routes.test);
+app.post('/upload', routes.upload);
 app.get('/', routes.index);
-app.post('/upload/', routes.upload);
-app.get('/api/summarize/', routes.summarize);
-app.get('/api/sonify/', routes.sonify);
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));

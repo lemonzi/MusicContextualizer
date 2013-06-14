@@ -10,6 +10,7 @@ var mmKey = '5594e12a32b1da8732b13724e88114e2';
 exports.stopList = require('./stoplist.json');
 
 exports.getLyrics = function(id, success, error) {
+    console.log('Found valid ID. Fetching Lyrics...');
     request({
         url: 'http://api.musixmatch.com/ws/1.1/track.lyrics.get',
         qs: {
@@ -19,9 +20,8 @@ exports.getLyrics = function(id, success, error) {
         json: true
     },
         function(e,r,data) {
-            if (e || data.message.header.status_code != 200) {
-                console.log('Error while querying MusixMatch: ' +
-                            data.message.header.status_code);
+            if (e || r.statusCode != 200 || data.message.header.status_code != 200) {
+                console.log('Error while querying MusixMatch: ' + data.message.header.status_code);
                 if (error) error(data.message);
             } else {
                 var lyrics = data.message.body.lyrics.lyrics_body;
@@ -94,20 +94,21 @@ exports.getNormalizedWords = function(dict,n,cb) {
         word.frequency = word.frequency / factor;
         return word;
     });
+    console.log(res);
     if (cb) cb(res);
     return res;
 };
 
 exports.getMainWordsFromLyrics = function(id,n,success, error) {
-    exports.getLyrics(id, function(lyrics) {
-        var dict = exports.getDictionary(lyrics);
+    exports.getLyrics(id, function(text) {
+        var dict = exports.getDictionary(text);
         success(exports.getMainWords(dict,n));
     },error);
 };
 
 exports.getNormalizedWordsFromLyrics = function(id,n,success,error) {
-    exports.getLyrics(id,function(lyrics) {
-        var dict = exports.getDictionary(lyrics);
+    exports.getLyrics(id,function(text) {
+        var dict = exports.getDictionary(text);
         success(exports.getNormalizedWords(dict,n));
     },error);
 };

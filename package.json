@@ -10,6 +10,7 @@
     "jade": "*",
     "request": "*",
     "freesound": "0.0.2",
-    "flatten": "*"
+    "flatten": "*",
+    "multipart": "*"
   }
 }
