@@ -9,6 +9,7 @@
     "express": "3.0.4",
     "jade": "*",
     "request": "*",
-    "freesound": "0.0.2"
+    "freesound": "0.0.2",
+    "flatten": "*"
   }
 }

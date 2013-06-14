@@ -20,7 +20,8 @@ exports.getLyrics = function(id, success, error) {
     },
         function(e,r,data) {
             if (e || data.message.header.status_code != 200) {
-                console.log('Error while querying MusixMatch: '+data.message.header.status_code);
+                console.log('Error while querying MusixMatch: ' +
+                            data.message.header.status_code);
                 if (error) error(data.message);
             } else {
                 var lyrics = data.message.body.lyrics.lyrics_body;
@@ -34,7 +35,8 @@ exports.getDictionary = function(str,cb) {
 
     var words = str.replace(/[,;.]/g,'')
                    .split(/[\s\/]+/g)
-                   .filter(function(s){return s.indexOf('\'') == -1;}) // exlude words with apostrophe
+                   // exlude words with apostrophe
+                   .filter(function(s){return s.indexOf('\'') == -1;})
                    .sort();
     var iWordsCount = words.length; // count w/ duplicates
 
@@ -65,7 +67,8 @@ exports.getDictionary = function(str,cb) {
     }
     // sort array by descending frequency | http://stackoverflow.com/a/8837505
     var result = arr.sort(function(a,b){
-        return (a.frequency > b.frequency) ? -1 : ((a.frequency < b.frequency) ? 1 : 0);
+        return (a.frequency > b.frequency) ? -1 :
+                ((a.frequency < b.frequency) ? 1 : 0);
     });
 
     if (cb) cb(result);

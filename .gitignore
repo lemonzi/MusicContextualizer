@@ -1,2 +1,5 @@
 node_modules
 public/js/lib
+*.o
+*.dylib
+.DS_Store

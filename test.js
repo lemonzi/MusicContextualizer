@@ -1,18 +1,17 @@
-// TESTING
-var soundscape = require('./backend/soundscape');
-var lyrics = require('./backend/lyrics');
+var identify = require('./backend/identify');
+var engine = require('./backend/engine');
 
-lyrics.getNormalizedWordsFromLyrics('15953433',10,function(list) {
-    console.log(list);
-    var mp3 = [];
-    list.forEach(function(entry) {
-        var nSounds = Math.round(list.length*entry.frequency);
-        if (!nSounds) return;
-        soundscape.getSounds([entry.text], {
-            sounds_per_page: nSounds
-        },function(sound) {
-            console.log(sound);
-            mp3.push(sound);
-        });
-    });
+var path = '/Users/lemonzi/Music/HQ/Michael Jackson/Thriller/6 Billie Jean.aiff';
+
+identify.analyzeTrack(path, function(data) {
+    console.log(data);
+    identify.identifyFromAnalysis(data,console.log,console.log);
 });
+
+/*
+
+engine.getLinksFromID('15953433',10,function(links){
+    console.log(links);
+});
+
+*/
