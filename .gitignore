@@ -3,3 +3,4 @@ public/js/lib
 *codegen/
 .DS_Store
 *.sublime*
+.gitattributes
