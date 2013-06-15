@@ -26,7 +26,6 @@ app.configure('development', function(){
     app.use(express.errorHandler());
 });
 
-app.get('/test',routes.test);
 app.post('/upload', routes.upload);
 app.get('/', routes.index);
 

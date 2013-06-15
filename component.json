@@ -1,13 +1,10 @@
 {
 	"name": "Music Contextualizer",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"dependencies": {
 		"requirejs": "~2.1",
 		"requirejs-i18n": "~2.0.x",
 		"jquery": "~1.9.x",
-		"mustache": "~0.7.2",
 		"requirejs-text": "~2.0.x",
-		"backbone-amd": "",
-		"underscore-amd": "1.4.4"
 	}
 }

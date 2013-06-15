@@ -8,9 +8,7 @@ var require = {
 	"baseUrl": '/js/lib',
 	"paths": {
 		"app": "../app",
-		"jquery": "jquery/jquery",
-		"backbone": "backbone-amd/backbone",
-		"underscore": "underscore-amd/underscore"
+		"jquery": "jquery/jquery"
 	}
 };
 // ==================================================

@@ -1,6 +1,8 @@
 {
   "name": "MusicContextualizer",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "author": "Quim Llimona",
+  "homepage": "http://github.com/lemonzi/MusicContextualizer",
   "private": true,
   "scripts": {
     "start": "node app"
