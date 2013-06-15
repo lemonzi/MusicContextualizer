@@ -1,4 +1,8 @@
-// TESTING
+/*
+ * Glue code for the 3 backend modules
+ * That's what the frontend actually calls
+ */
+
 var soundscape = require('./soundscape');
 var lyrics = require('./lyrics');
 var identify = require('./identify');

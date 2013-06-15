@@ -7,7 +7,7 @@
  var child_process = require('child_process');
 
  var fingerprinter = './backend/ENMFP_codegen/codegen.Darwin';
- var apiKey = 'HZFW4LZYX0APZER4I';
+ var apiKey = 'MY_ECHONEST_API_KEY';
 
 exports.analyzeTrack = function(path,success,error) {
     var child = child_process.execFile(fingerprinter,[path],{},function(e,data) {

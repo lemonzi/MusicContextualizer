@@ -6,7 +6,7 @@
 var request = require('request'),
     freesound = require('freesound');
 
-freesound.apiKey = '8e541132eb0e40bd829806b7503f105e';
+freesound.apiKey = 'MY_FREESOUND_API_KEY';
 
 exports.getSounds = function(words,options,success, error) {
     if (words instanceof Array) words = words.join(' ');

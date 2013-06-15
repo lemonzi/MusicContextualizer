@@ -5,7 +5,7 @@
 
 var request = require('request');
 
-var mmKey = '5594e12a32b1da8732b13724e88114e2';
+var mmKey = 'MY_MUSIXMATCH_API_KEY';
 
 exports.stopList = require('./stoplist.json');
 
