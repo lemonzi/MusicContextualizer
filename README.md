@@ -23,7 +23,7 @@ API Keys
 
 Place your API keys in the following files
 
-* _EchoNest_: [`backend/identify.js`](backend/identify.js)
-* _MusixMatch_: [`backend/lyrics.js`](backend/lyrics.js)
-* _Freesound_: [`backend/soundscape.js`](backend/soundscape.js)
+* EchoNest: [`backend/identify.js`](backend/identify.js)
+* MusixMatch: [`backend/lyrics.js`](backend/lyrics.js)
+* Freesound: [`backend/soundscape.js`](backend/soundscape.js)
 
