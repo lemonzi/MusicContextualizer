@@ -13,6 +13,10 @@
     "request": "*",
     "freesound": "0.0.2",
     "flatten": "*",
-    "multipart": "*"
+    "multipart": "*",
+    "bower": "*"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
