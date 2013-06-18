@@ -5,6 +5,6 @@
 		"requirejs": "~2.1",
 		"requirejs-i18n": "~2.0.x",
 		"jquery": "~1.9.x",
-		"requirejs-text": "~2.0.x",
+		"requirejs-text": "~2.0.x"
 	}
 }
