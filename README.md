@@ -7,7 +7,7 @@ Give it a sound file, and it will give you back another sound that contains Free
 
 On the backend, it basically fingerprints the audio with the Echonest ENMFP, queries it in their server to find out the track, from this it derives possible MusixMatch IDs, fetches lyrics from them, processes them using a linguistic model and queries the main words to freesound. The number of sounds assigned to each main word depends on its weight.
 
-Additionally, I created a node.js package for accessing the Freesound API, based on a client-side library. It's already on [NPM](https://npmjs.org/package/freesound) (`npm install freesound`) and [GitHub](https://github.com/lemonzi/node-freesound), and probably has some bugs. Feel free to jump in!
+Additionally, I created a node.js package for accessing the Freesound API, based on a client-side library. It's already on [NPM](https://npmjs.org/package/freesound) (`npm install freesound`) and [GitHub](https://github.com/lemonzi/freesound.js), and probably has some bugs. Feel free to jump in!
 
 Usage
 =====
