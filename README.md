@@ -1,7 +1,7 @@
 Music Contextualizr
 ===================
 
-![Are the dependencies up to date?](https://david-dm.org/username/repo.png)
+![Are the dependencies up to date?](https://david-dm.org/lemonzi/MusicContextualizer.png)
 
 Don't you think that sometimes songs (musically speaking) have nothing to do with their lyrics? Well, this hacks tries to solves this, although it's a bit extreme.
 
