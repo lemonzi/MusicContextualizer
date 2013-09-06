@@ -1,6 +1,8 @@
 Music Contextualizr
 ===================
 
+![Are the dependencies up to date?](https://david-dm.org/username/repo.png)
+
 Don't you think that sometimes songs (musically speaking) have nothing to do with their lyrics? Well, this hacks tries to solves this, although it's a bit extreme.
 
 Give it a sound file, and it will give you back another sound that contains Freesound samples with tags that actually match the lyrics.
