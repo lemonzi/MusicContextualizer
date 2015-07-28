@@ -14,10 +14,10 @@ Additionally, I created a node.js package for accessing the Freesound API, based
 Usage
 =====
 
-* Run `npm install` and `bower install` to fetch missing libraries
-* Put you API Keys (see below)
-* Download an [EchoNest fingerprinter](http://developer.echonest.com/downloads/license) and put the path to the binary in [`backend/identify.js`](backend/identify.js)
-* Run `node app`
+* Run `npm install` to fetch dependencies. This will automatically run `bower install` to fetch client-side assets.
+* Put you API Keys (see below).
+* Download an [EchoNest fingerprinter](http://developer.echonest.com/downloads/license) and put the path to the binary in [`backend/identify.js`](backend/identify.js).
+* Run `node app`.
 * Enjoy :)
 
 API Keys

@@ -8,10 +8,10 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "3.0.4",
+    "express": "*",
     "jade": "*",
     "request": "*",
-    "freesound": "0.0.2",
+    "freesound": "*",
     "flatten": "*",
     "multipart": "*",
     "bower": "*"
