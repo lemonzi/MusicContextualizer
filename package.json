@@ -11,7 +11,7 @@
     "express": "*",
     "jade": "*",
     "request": "*",
-    "freesound": "*",
+    "freesound": "0.0.2",
     "flatten": "*",
     "multipart": "*",
     "bower": "*"
